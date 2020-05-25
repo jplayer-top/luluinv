@@ -3,7 +3,7 @@
 		<image src="../../static/bg.png" :style="picHeight" class="image"></image>
 		<view class="download">
 			<view class="download-body">
-				<image src="../../static/logo.png" class="download-image"></image>
+				<image src="../../static/logo.jpg" class="download-image"></image>
 				<view class="download-text">
 					<text class="download-title">Ears</text>
 					<text>一分钟，找到你</text>
@@ -45,6 +45,7 @@ export default {
 	display: flex;
 }
 .download-image {
+	border-radius: 15rpx;
 	width: 80rpx;
 	height: 80rpx;
 	margin-left: 20rpx;
@@ -57,7 +58,7 @@ export default {
 	color: white;
 }
 .download-title {
-	color: #ffaaff;
+	color: #e66465;
 	font-size: 40rpx;
 }
 .download-body {
