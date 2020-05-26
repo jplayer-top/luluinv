@@ -31,10 +31,25 @@ export default {
 		this.picHeight = 'height:' + h + 'px';
 		console.log(w);
 	},
-	onLoad() {},
+	onLoad() {
+		var music = null;
+		music = uni.createInnerAudioContext(); //创建播放器对象
+		music.src = 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3'; //选择播放的音频
+		music.autoplay = true;
+		music.loop = true;
+		music.play(); //执行播放
+		console.log('4444');
+		document.addEventListener(
+			'WeixinJSBridgeReady',
+			function() {
+				music.play();
+			},
+			false
+		);
+	},
 	methods: {
 		toDownlaod() {
-			window.open("http://www.yunshenglive.com/");
+			window.open('http://www.yunshenglive.com/');
 		}
 	}
 };
