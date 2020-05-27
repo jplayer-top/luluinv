@@ -75,6 +75,11 @@
     "h5" : {
         "devServer" : {
             "https" : false
-        }
+        },
+        "router" : {
+            "base" : "/lulu/inv/"
+        },
+        "template" : "",
+        "title" : "Ears"
     }
 }

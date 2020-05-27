@@ -20,15 +20,15 @@ export default {
 	data() {
 		return {
 			title: 'Hello',
-			picWidth: 'width:320px',
-			picHeight: 'height:640px'
+			picWidth: 'width:420px',
+			picHeight: 'height:840px'
 		};
 	},
 	created() {
 		var w = document.documentElement.clientWidth || document.body.clientWidth;
 		var h = document.documentElement.clientHeight || document.body.clientHeight;
 		this.picWidth = 'width:' + w + 'px';
-		this.picHeight = 'height:' + h + 'px';
+		this.picHeight = 'height:' + 2 * w + 'px';
 		console.log(w);
 	},
 	onLoad() {
