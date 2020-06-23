@@ -49,7 +49,7 @@ export default {
 	},
 	methods: {
 		toDownlaod() {
-			window.open('http://www.yunshenglive.com/');
+			window.open('https://apps.apple.com/cn/app/ears/id1515285049');
 		}
 	}
 };
